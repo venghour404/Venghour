@@ -1,0 +1,58 @@
+<!DOCTYPE html>		
+<html>
+	<head>
+		<title>Border Image</title>
+		<style type="text/css">
+			p {
+				width: 500px;
+				height: 50px;
+				border: 11px solid #ffffff;
+			}
+			
+			p.one1 {
+				border-image: url("images/diamonds.png") 30 stretch;
+			}
+			
+			p.one2 {
+				border-image: url("images/diamonds.png") 30 round;
+			}
+
+			p.two1 {
+				border-image: url("images/diamonds.png") 30 15 stretch;
+			}
+			
+			p.two2 {
+				border-image: url("images/diamonds.png") 30 15 round;
+			}
+
+			p.three1 {
+				border-image: url("images/diamonds.png") 30 15 45 stretch;
+			}
+			
+			p.three2 {
+				border-image: url("images/diamonds.png") 30 15 45 round;
+			}
+
+			p.four1 {
+				border-image: url("images/diamonds.png") 30 15 45 60 stretch;
+			}
+			
+			p.four2 {
+				border-image: url("images/diamonds.png") 30 15 45 60 round;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one1">One number: All the same -- stretch</p>
+		<p class="one2">One number: All the same -- round</p>
+		<br />
+		<p class="two1">Two number: First-Top & Bottom, Second-Right & Left -- stretch</p>
+		<p class="two2">Two number: First-Top & Bottom, Second-Right & Left -- round</p>
+		<br />
+		<p class="three1">Three number: First-Top, Second-Right & Left, Third-Bottom -- stretch</p>
+		<p class="three2">Three number: First-Top, Second-Right & Left, Third-Bottom -- round</p>
+		<br />
+		<p class="four1">Four number: First-Top, Second-Right, Third-Bottom, Fourth-Left -- stretch</p>
+		<p class="four2">Four number: First-Top, Second-Right, Third-Bottom, Fourth-Left -- round</p>
+	</body>
+</html>
